@@ -23,7 +23,7 @@ function ScreenA1() {
         {'\n\n'}
         Boton para navegar a ScreenA2
       </Text>
-      <Button title="Ir A ScreenA2" onPress={() => navigation.navigate('ScreenA2')} />
+      <Button title="Detalles" onPress={() => navigation.navigate('ScreenA2')} />
     </View>
   );
 }
@@ -131,7 +131,7 @@ function ScreenC2() {
         onPress={() => navigation.navigate('ScreenC3', { userName: name, userPhone: phone })} 
       />
     </View>
-  );
+  );  
 }
 
 function ScreenC3({ route }) {
@@ -220,8 +220,8 @@ function StackCNavigator() {
           headerTitleAlign: 'center',
           headerRight: () => (
             <Button
-              onPress={() => alert('Hice Click!!')}
-              title="Info"
+              onPress={() => alert('Hiciste el click')}
+              title="Toca aca"
               color="#00cc00"
             />
           ),
@@ -241,7 +241,6 @@ function StackDNavigator() {
     </StackD.Navigator>
   );
 }
-
 
 const Tab = createBottomTabNavigator();
 function MyTabs() {
